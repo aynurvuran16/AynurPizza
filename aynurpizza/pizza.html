@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Aynur Pizza</title>
+    <link rel="shortcut icon" href="pizza-3007395_1280.jpg" type="x-icon">
+    <link rel="stylesheet" href="aynurpizza.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('pizza-2589577_1280.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <header>
+        <h1>Aynur Pizza</h1>
+
+    </header>
+
+
+
+    <table align="center">
+        <tr>
+            <td style="width: 50%">
+                <form>
+
+                    <fieldset>
+                        <legend>Select your order type:</legend>
+                        <input type="radio" id="delivery" name="dtype" value="Delivery">
+                        <label for="delivery">Delivery</label><br>
+                        <input type="radio" id="to-go" name="dtype" value="To-go">
+                        <label for="to-go">To-go</label><br>
+                        <input type="radio" id="dine-in" name="dtype" value="Dine-in">
+                        <label for="dine-in">Dine-in</label>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend> Pizza: </legend>
+                        <label for="pquantity">Quantity</label>
+                        <select id="pquantity" name="pquantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select><br>
+                        <p>Choose your size:</p>
+                        <select id="psize" name="psize">
+                            <option value="sliced">Sliced</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select><br>
+                        <p>Choose your crust:</p>
+                        <select id="pcrust" name="pcrust">
+                            <option value="deepdish">Deepdish</option>
+                            <option value="thin crust">Thin Crust</option>
+                            <option value="regular crust">Regular Crust</option>
+                            <option value="Stuffed pizza">Stuffed Pizza</option>
+                        </select><br>
+                        <p>Choose your pizza:</p>
+                        <select id="pizza" name="pizza">
+                            <option value="margarita">Margarita</option>
+                            <option value="cheese pizza">Cheese Pizza</option>
+                            <option value="vegetarian pizza">Vegetarian Pizza</option>
+                            <option value="Pepperoni pizza">Pepperoni Pizza</option>
+                        </select><br>
+                        <p>Please select your shape:</p>
+                        <input type="radio" id="round" name="pshape" value="Round">
+                        <label for="round">Round</label><br>
+                        <input type="radio" id="square" name="pshape" value="Square">
+                        <label for="square">Square</label><br>
+                        <br>
+                        <p>Choose your toppings:</p>
+                        <input type="checkbox" id="mozzarella" value="Mozzarella">
+                        <label for="Mozzarella"> Mozzarella</label><br>
+                        <input type="checkbox" id="Pepperoni" value="Pepperoni">
+                        <label for="Pepperoni"> Pepperoni</label><br>
+                        <input type="checkbox" id="mushroom" value="Mushroom">
+                        <label for="mushroom"> Mushroom</label><br>
+                        <input type="checkbox" id="spinach" value="Spinach">
+                        <label for="spinach"> Spinach</label><br>
+                        <input type="checkbox" id="chicken" value="Chicken">
+                        <label for="chicken"> Chicken</label>
+                    </fieldset><br>
+                    <fieldset>
+                        <legend> Delivery Time </legend>
+                        <input type="datetime-local" id="delivery time">
+                    </fieldset>
+                </form>
+
+
+
+            </td>
+            <td style="width: 50%">
+
+                <fieldset>
+                    <legend>Delivery Information</legend>
+                    <table>
+                    <form action="doctype.html" target="_blank" style="text-align: right;">
+        <tr>
+            <td><label for="name1">First Name</label></td>
+            <td><input type="text" name="name1" id="name1"></td>
+        </tr>
+        <tr>
+            <td><label for="name2">Last Name</label></td>
+            <td>
+                <input type="text" name="name2" id="name2">
+            </td>
+        </tr>
+        <tr>
+            <td> <label for="email">E-Mail Address</label></td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="addres">Home Address</label></td>
+            <td><input type="text" name="adress" id="adress"></td>
+        </tr>
+        <tr>
+            <td><label for="phone">Phone Number</label></td>
+            <td><input type="phone" name="phone" id="phone"></td>
+        </tr>
+        <tr>
+            <td><label for="comments">Additional Comments</label></td>
+            <td><input type="textarea" name="comments" id="comments"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit">
+            </td>
+            <td>
+                <input type="reset">
+            </td>
+        </tr>
+
+
+
+        </form>
+    </table>
+    </fieldset>
+
+
+
+    <form>
+        <fieldset>
+            <legend>Select your payment type</legend>
+            <input type="radio" id="cashondelivery" name="paytype" value="Cash on Delivery">
+            <label for="Cashondeelivery">Cash on Delivery</label><br><br>
+            <input type="radio" id="Card Payment" name="paytype" value="Bank/Credit Card Payment">
+            <label for="cardpayment">Bank/Credit Card Payment</label><br><br><br>
+            <input type="text" name="chn" id="chn" placeholder="Card Holder Name.." style="width: 100%;"><br><br><br>
+            <input type="number" name="cn" id="cn" placeholder="Card Number.." style="width: 100%;"><br><br><br>
+            <input type="number" name="cvv" id="cvv" placeholder="CVV.." style="width: 30%;"><br><br><br>
+            <input type="date" name="ed" id="ed" placeholder="Expire Date.."><br><br><br>
+        </fieldset>
+
+    </form>
+
+    </td>
+    </tr>
+    </table>
+
+
+
+    <footer>
+        <p align="center">©2024 Pizza World. All rights reserved.</p>
+    </footer>
+</body>
+
+
+</html>

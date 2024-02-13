@@ -1,0 +1,63 @@
+h1 {
+  text-align: center;
+  font-family: Copperplate, Papyrus, fantasy;
+  font-size: 60px;
+  font-style: italic;
+  font-variant: small-caps;
+
+}
+
+body {
+  background-image: url(‘pizza-2589577_1280.jpg’);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: monospace, monaco;
+  
+}
+
+.comments {
+  
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  }
+
+  
+
+  legend{
+    
+    color: white;
+    padding: 5px 10px;
+    font-size: large;
+  }
+
+input[type=(text,email,phone,select,checkbox)] {
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 70px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+table.td{
+  width: 50%;
+}
